@@ -68,8 +68,7 @@ class ExpertiseGraphDataset(Dataset):
         from tqdm import tqdm
         article_files = glob.glob(os.path.join(self.articles_dir, "*.json"))
         
-        print(f"Discovered {len(article_files)} articles total. Loading a sample of 2000 for efficiency...")
-        article_files = article_files[:2000]
+        print(f"Discovered {len(article_files)} articles total. Loading...")
         
         for p_file in tqdm(article_files, desc="Parsing internal relationships"):
             paper_id = os.path.basename(p_file).replace(".json", "")
