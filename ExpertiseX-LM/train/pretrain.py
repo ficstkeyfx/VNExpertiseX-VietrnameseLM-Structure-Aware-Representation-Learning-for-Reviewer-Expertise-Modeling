@@ -6,8 +6,10 @@ from model import ExpertiseXLMForPreTraining
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data_dir", type=str, default=r"d:\C500\Lab306\Reviewer_Recommendation\goldstandard-reviewer-paper-match\data")
+    parser.add_argument("--data_dir", type=str, default=r"d:\C500\Lab306\Reviewer_Recommendation\crawl-data\articles")
     parser.add_argument("--output_dir", type=str, default="./pretrain_output")
+    parser.add_argument("--num_train_epochs", type=int, default=5)
+    parser.add_argument("--max_steps", type=int, default=-1)
     args = parser.parse_args()
 
     tokenizer = AutoTokenizer.from_pretrained("vinai/phobert-base-v2", local_files_only=True)
@@ -15,13 +17,11 @@ def main():
     special_tokens_dict = {'additional_special_tokens': ['[TARGET_PAPER]', '[REVIEWER_PAPER]', '[RESEARCH_AREA]']}
     tokenizer.add_special_tokens(special_tokens_dict)
 
-    # Load dataset for pretraining (we can just pass eval_csv=None, dataset will need a basic participant list)
-    # For demonstration we reuse evaluations.csv as a source of valid (Reviewer, Paper) pairs, 
-    # but in pure MSLM this should be unlabeled sampled pairings from all papers/reviewers
-    eval_csv_path = os.path.join(args.data_dir, "evaluations.csv")
+    # Load dataset for pretraining
     dataset = ExpertiseGraphDataset(
         data_dir=args.data_dir,
-        eval_csv=eval_csv_path, # Using this merely to grab test pairs easily
+        eval_csv=None, 
+
         tokenizer=tokenizer,
         is_pretrain=True
     )
@@ -37,14 +37,15 @@ def main():
     training_args = TrainingArguments(
         output_dir=args.output_dir,
         overwrite_output_dir=True,
-        num_train_epochs=1,
-        max_steps=10,
+        num_train_epochs=args.num_train_epochs,
+        max_steps=args.max_steps,
         per_device_train_batch_size=4,
-        save_steps=10,
-        save_total_limit=1,
-        logging_steps=5,
+        save_steps=500,
+        save_total_limit=2,
+        logging_steps=50,
         learning_rate=5e-5,
         remove_unused_columns=False,
+        save_safetensors=False,
     )
 
     trainer = Trainer(

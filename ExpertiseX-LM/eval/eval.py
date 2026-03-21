@@ -18,7 +18,7 @@ def get_top_k(scores, k=3):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data_dir", type=str, default=r"d:\C500\Lab306\Reviewer_Recommendation\goldstandard-reviewer-paper-match\data")
+    parser.add_argument("--data_dir", type=str, default=r"d:\C500\Lab306\Reviewer_Recommendation\crawl-data\articles")
     parser.add_argument("--model_dir", type=str, default=r"..\train\finetune_output\final")
     parser.add_argument("--top_k", type=int, default=3)
     parser.add_argument("--num_test_papers", type=int, default=2)
