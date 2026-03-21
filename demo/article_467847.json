@@ -1,0 +1,18 @@
+{
+    "URL": "https://sti.vista.gov.vn/publication/view/phan-loai-du-lieu-mat-can-bang-voi-rung-ngau-nhien-ket-hop-phan-cum-ward-6298eb7da1037c21e02e72eca35cd49e-467847.html",
+    "Lĩnh vực nghiên cứu": "20204 - Các hệ thống và kỹ thuật truyền thông",
+    "Tác giả": "Võ Thị Ngọc Hà, Nguyễn Thanh Sơn, Đặng Đăng Khoa, Lê Phương Long, Phan Thị Thu Ngân",
+    "Nhan đề": "Phân loại dữ liệu mất cân bằng với rừng ngẫu nhiên kết hợp phân cụm Ward",
+    "Nhan đề tiếng anh": "Imbalanced data classification using random forest with Ward clustering",
+    "Nguồn trích": "Tạp chí Khoa học Lạc Hồng",
+    "Năm xuất bản": "2025",
+    "Số": "22",
+    "Trang": "47-51",
+    "ISSN": "2525-2186",
+    "Từ khóa": "Hiệu suất phân loại, Phương pháp phân cụm",
+    "Từ khóa tiếng anh": "Modified Balanced Random Forest, Classification performance, Imbalanced datasets, Clustering methods, Ward Hierarchical Clustering",
+    "Tóm tắt": "Nghiên cứu này giới thiệu thuật toán Modified Balanced Random Forest (MBRF) nhằm cải thiện hiệu suất phân loại trên tập dữ liệu mất cân bằng. Phương pháp đề xuất nâng cao Rừng Ngẫu Nhiên Cân Bằng bằng cách áp dụng chiến lược lấy mẫu giảm dựa trên kỹ thuật phân cụm trong từng vòng lặp khởi tạo dữ liệu. Bốn phương pháp phân cụm được đánh giá gồm K Means, Clustering, Agglomerative Clustering, and Ward Hierarchical Clustering Trong đó, kỹ thuật Ward Hierarchical Clustering cho kết quả tối ưu nhất. Kết quả thực nghiệm cho thấy phương pháp đề xuất vượt trội hơn so với Random Forest (RF) and Balanced Random Forest (BRF) truyền thống, với tỷ lệ phát hiện dương tính đúng đạt 93,42%, tỷ lệ phát hiện âm tính đúng đạt 93,60% và độ chính xác theo diện tích dưới đường cong ROC đạt 93,51%, đồng thời rút ngắn thời gian xử lý. Những kết quả này khẳng định hiệu quả của phương pháp đề xuất trong bài toán phân loại dữ liệu mất cân bằng.",
+    "Tóm tắt tiếng anh": "This study introduces a Modified Balanced Random Forest algorithm to improve classification performance on imbalanced datasets. The proposed method enhances the Balanced Random Forest by applying a clustering based under sampling strategy during each bootstrap iteration. Four clustering methods were evaluated including K Means, Spectral Clustering, Agglomerative Clustering, and Ward Hierarchical Clustering. Among these, the Ward Hierarchical Clustering technique achieved the best performance. Experimental results show that the proposed method outperforms standard Random Forest and Balanced Random Forest, reaching a true positive rate of 93.42 percent, a true negative rate of 93.60 percent, and an area under the curve accuracy of 93.51 percent, while also reducing processing time. These results confirm the effectiveness of the proposed approach for imbalanced data classification.",
+    "Link file pdf toàn văn": "https://sti.vista.gov.vn/publication/download/467847-6298eb7da1037c21e02e72eca35cd49e.html",
+    "Tên file PDF cục bộ": "article_467847.pdf"
+}

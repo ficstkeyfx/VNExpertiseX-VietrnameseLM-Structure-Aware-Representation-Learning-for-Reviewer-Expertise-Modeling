@@ -1,0 +1,98 @@
+HREF: https://sti.vista.gov.vn/ | TEXT: Trang chủ
+HREF: https://sti.vista.gov.vn/about.html | TEXT: Giới thiệu
+HREF: https://sti.vista.gov.vn/?mod=publication&keyword=&year=0&ts=all&af=&nb=4&cat=&sort=&page=20# | TEXT: Hướng dẫn tra cứu
+HREF: https://sti.vista.gov.vn/?mod=publication&keyword=&year=0&ts=all&af=&nb=4&cat=&sort=&page=20# | TEXT: Thủ tục hành chính
+HREF: https://dichvucong.mst.gov.vn/vi/home-btttt/trangchu | TEXT: Dịch vụ công
+HREF: https://dichvucong.mst.gov.vn/vi/home-btttt/trangchu | TEXT: Bộ chỉ số phục vụ người dân, doanh nghiệp trong th
+HREF: https://sti.vista.gov.vn/?mod=publication&keyword=&year=0&ts=all&af=&nb=4&cat=&sort=&page=20# | TEXT: Liên hệ
+HREF: https://nsti.vista.gov.vn/controlpanel | TEXT: Đăng nhập
+HREF: https://sti.vista.gov.vn/?mod=publication&keyword=&year=0&ts=all&af=&nb=4&cat=&sort=&page=20# | TEXT: tìm kiếm Công bố KH&CN
+HREF: https://sti.vista.gov.vn/?mod=publication&keyword=&year=0&ts=all&af=&nb=4&cat=&sort=&page=20 | TEXT: Các Công bố KH&CN
+HREF: https://sti.vista.gov.vn/publication/view/hanh-trinh-50-nam-kien-tao-tri-thuc-va-dau-an-lich-su-cua-truong-dai-hoc-kinh-te-dai-hoc-da-nang-a6d4b80cb2c6978d8889ecc1a993dfa0-464652.html | TEXT: Hành trình 50 năm kiến tạo tri thức và dấu ấn lịch
+HREF: https://sti.vista.gov.vn/?mod=publication&q=%C4%90%E1%BA%A1i%20h%E1%BB%8Dc%20%C4%90%C3%A0%20N%E1%BA%B5ng | TEXT: Đại học Đà Nẵng
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Gi%C3%A1o%20d%E1%BB%A5c%20%C4%91%E1%BA%A1i%20h%E1%BB%8Dc | TEXT: Giáo dục đại học
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Tri%20th%E1%BB%A9c | TEXT: Tri thức
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Ph%C3%A1t%20tri%E1%BB%83n | TEXT: Phát triển
+HREF: https://sti.vista.gov.vn/publication/download/464652-a6d4b80cb2c6978d8889ecc1a993dfa0.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/kham-pha-tac-dong-cua-cac-kieu-khoe-khoang-cua-nguoi-noi-tieng-den-y-dinh-mua-hang-cua-nguoi-tieu-dung-vai-tro-cua-yeu-to-the-hien-ban-than-va-phu-hop-c26b5e3c748ac46191bb932dc1862d33-464651.html | TEXT: Khám phá tác động của các kiểu khoe khoang của ngư
+HREF: https://sti.vista.gov.vn/?mod=publication&q=T%C3%A1c%20%C4%91%E1%BB%99ng%20khoe%20khoang | TEXT: Tác động khoe khoang
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Khi%C3%AAm%20t%E1%BB%91n | TEXT: Khiêm tốn
+HREF: https://sti.vista.gov.vn/?mod=publication&q=%C3%9D%20%C4%91%E1%BB%8Bnh%20mua%20h%C3%A0ng | TEXT: Ý định mua hàng
+HREF: https://sti.vista.gov.vn/?mod=publication&q=S%E1%BA%A3n%20ph%E1%BA%A9m%20xa%20x%E1%BB%89 | TEXT: Sản phẩm xa xỉ
+HREF: https://sti.vista.gov.vn/?mod=publication&q=H%C3%A0nh%20vi%20ti%C3%AAu%20d%C3%B9ng | TEXT: Hành vi tiêu dùng
+HREF: https://sti.vista.gov.vn/publication/download/464651-c26b5e3c748ac46191bb932dc1862d33.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/phan-tich-cac-nhan-to-tac-dong-den-y-dinh-khoi-nghiep-xanh-cua-sinh-vien-tren-dia-ban-thanh-pho-ho-chi-minh-6f91f318e24dc751ff3e81b6e1fff0d5-464650.html | TEXT: Phân tích các nhân tố tác động đến ý định khởi ngh
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Kh%E1%BB%9Fi%20nghi%E1%BB%87p%20xanh | TEXT: Khởi nghiệp xanh
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Sinh%20vi%C3%AAn | TEXT: Sinh viên
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Y%E1%BA%BFu%20t%E1%BB%91%20t%C3%A1c%20%C4%91%E1%BB%99ng | TEXT: Yếu tố tác động
+HREF: https://sti.vista.gov.vn/?mod=publication&q=%C3%9D%20%C4%91%E1%BB%8Bnh%20kh%E1%BB%9Fi%20nghi%E1%BB%87p | TEXT: Ý định khởi nghiệp
+HREF: https://sti.vista.gov.vn/publication/download/464650-6f91f318e24dc751ff3e81b6e1fff0d5.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/dinh-huong-phat-trien-ky-nang-nghe-nghiep-thong-qua-cac-chuong-trinh-ngoai-khoa-va-phuc-vu-cong-dong-tai-khoa-quan-tri-kinh-doanh-truong-dai-hoc-kinh--54566121fb8e7adf40c21f291d8b0cda-464649.html | TEXT: Định hướng phát triển kỹ năng nghề nghiệp thông qu
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Ho%E1%BA%A1t%20%C4%91%E1%BB%99ng%20ngo%E1%BA%A1i%20kh%C3%B3a | TEXT: Hoạt động ngoại khóa
+HREF: https://sti.vista.gov.vn/?mod=publication&q=K%E1%BB%B9%20n%C4%83ng%20ngh%E1%BB%81%20nghi%E1%BB%87p | TEXT: Kỹ năng nghề nghiệp
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Ph%C3%A1t%20tri%E1%BB%83n%20k%E1%BB%B9%20n%C4%83ng | TEXT: Phát triển kỹ năng
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Sinh%20vi%C3%AAn | TEXT: Sinh viên
+HREF: https://sti.vista.gov.vn/publication/download/464649-54566121fb8e7adf40c21f291d8b0cda.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/moi-quan-he-giua-no-cong-lam-phat-va-tang-truong-kinh-te-nghien-cuu-tai-viet-nam-baf1739fede65f6247522fb217d7bd4d-464648.html | TEXT: Mối quan hệ giữa nợ công, lạm phát và tăng trưởng 
+HREF: https://sti.vista.gov.vn/?mod=publication&q=N%E1%BB%A3%20c%C3%B4ng | TEXT: Nợ công
+HREF: https://sti.vista.gov.vn/?mod=publication&q=L%E1%BA%A1m%20ph%C3%A1t | TEXT: Lạm phát
+HREF: https://sti.vista.gov.vn/?mod=publication&q=T%C4%83ng%20tr%C6%B0%E1%BB%9Fng%20kinh%20t%E1%BA%BF | TEXT: Tăng trưởng kinh tế
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Vi%E1%BB%87t%20Nam | TEXT: Việt Nam
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Ch%C3%ADnh%20s%C3%A1ch%20qu%E1%BA%A3n%20l%C3%BD | TEXT: Chính sách quản lý
+HREF: https://sti.vista.gov.vn/publication/download/464648-baf1739fede65f6247522fb217d7bd4d.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/dong-luc-co-hoi-nang-luc-cua-nhan-vien-trong-viec-giam-lang-phi-thuc-pham-tai-cac-khach-san-sang-trong-o-viet-nam-e2487995ad640f4079f5d0b4a7244f28-464647.html | TEXT: Động lực, cơ hội, năng lực của nhân viên trong việ
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Th%E1%BB%B1c%20ph%E1%BA%A9m%20d%C6%B0%20th%E1%BB%ABa | TEXT: Thực phẩm dư thừa
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Ng%C3%A0nh%20kh%C3%A1ch%20s%E1%BA%A1n | TEXT: Ngành khách sạn
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Nh%C3%A2n%20vi%C3%AAn | TEXT: Nhân viên
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Gi%E1%BA%A3m%20thi%E1%BB%83u | TEXT: Giảm thiểu
+HREF: https://sti.vista.gov.vn/?mod=publication&q=%C4%90%C3%A0o%20t%E1%BA%A1o | TEXT: Đào tạo
+HREF: https://sti.vista.gov.vn/publication/download/464647-e2487995ad640f4079f5d0b4a7244f28.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/phat-trien-tai-chinh-va-bat-binh-dang-phan-phoi-thu-nhap-nghien-cuu-thuc-nghiem-truong-hop-viet-nam-bang-mo-hinh-ardl-75dd98ec02c5bcc2060991aa47ba06c0-464646.html | TEXT: Phát triển tài chính và bất bình đẳng phân phối th
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Ph%C3%A1t%20tri%E1%BB%83n%20t%C3%A0i%20ch%C3%ADnh | TEXT: Phát triển tài chính
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Vi%E1%BB%87t%20Nam | TEXT: Việt Nam
+HREF: https://sti.vista.gov.vn/?mod=publication&q=M%C3%B4%20h%C3%ACnh%20ARDL | TEXT: Mô hình ARDL
+HREF: https://sti.vista.gov.vn/publication/download/464646-75dd98ec02c5bcc2060991aa47ba06c0.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/tac-dong-cua-kinh-te-bien-den-tang-truong-kinh-te-viet-nam-6932cfcdbda9f4ef17dd6760843b3260-464645.html | TEXT: Tác động của kinh tế biển đến tăng trưởng kinh tế 
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Kinh%20t%E1%BA%BF%20bi%E1%BB%83n | TEXT: Kinh tế biển
+HREF: https://sti.vista.gov.vn/?mod=publication&q=T%C4%83ng%20tr%C6%B0%E1%BB%9Fng%20kinh%20t%E1%BA%BF | TEXT: Tăng trưởng kinh tế
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Khai%20th%C3%A1c%20h%E1%BA%A3i%20s%E1%BA%A3n | TEXT: Khai thác hải sản
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Nu%C3%B4i%20tr%E1%BB%93ng%20thu%E1%BB%B7%20s%E1%BA%A3n | TEXT: Nuôi trồng thuỷ sản
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Vi%E1%BB%87t%20Nam | TEXT: Việt Nam
+HREF: https://sti.vista.gov.vn/publication/download/464645-6932cfcdbda9f4ef17dd6760843b3260.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/cac-yeu-to-tac-dong-den-quyet-dinh-thay-doi-cong-ty-giao-nhan-hang-hoa-duong-bien-cua-cac-doanh-nghiep-xuat-khau-viet-nam-2244b00e0490a212a26cb0e0ccc281d0-464644.html | TEXT: Các yếu tố tác động đến quyết định thay đổi công t
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Giao%20nh%E1%BA%ADn%20h%C3%A0ng%20h%C3%B3a | TEXT: Giao nhận hàng hóa
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Doanh%20nghi%E1%BB%87p%20xu%E1%BA%A5t%20kh%E1%BA%A9u | TEXT: Doanh nghiệp xuất khẩu
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Quy%E1%BA%BFt%20%C4%91%E1%BB%8Bnh%20thay%20%C4%91%E1%BB%95i | TEXT: Quyết định thay đổi
+HREF: https://sti.vista.gov.vn/?mod=publication&q=C%C3%B4ng%20ty%20giao%20nh%E1%BA%ADn | TEXT: Công ty giao nhận
+HREF: https://sti.vista.gov.vn/?mod=publication&q=Y%E1%BA%BFu%20t%E1%BB%91%20t%C3%A1c%20%C4%91%E1%BB%99ng | TEXT: Yếu tố tác động
+HREF: https://sti.vista.gov.vn/publication/download/464644-2244b00e0490a212a26cb0e0ccc281d0.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/optimal-power-mobilization-for-electric-vehicle-c-harging-stations-in-distribution-networks-with-distributed-generations-and-battery-storage-systems-1d6782eacaaed0e1629e7979e6d4a757-410021.html | TEXT: OPTIMAL POWER MOBILIZATION FOR ELECTRIC VEHICLE C-
+HREF: https://sti.vista.gov.vn/publication/download/410021-1d6782eacaaed0e1629e7979e6d4a757.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/effect-of-calcination-temperature-and-doping-ions-concentration-on-optical-properties-of-ypo4tb3-34152d9b929a6969da27a29963ad3742-410037.html | TEXT: EFFECT OF CALCINATION TEMPERATURE AND DOPING IONS 
+HREF: https://sti.vista.gov.vn/publication/download/410037-34152d9b929a6969da27a29963ad3742.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/human-resource-training-for-the-semiconductor-industry-in-digital-transformation-needs-and-challenges-93ed7c5f829628672e84b0dcc6382cb4-410040.html | TEXT: HUMAN RESOURCE TRAINING FOR THE SEMICONDUCTOR INDU
+HREF: https://sti.vista.gov.vn/publication/download/410040-93ed7c5f829628672e84b0dcc6382cb4.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/semiconductor-chips-designing-process-using-open-source-software-and-process-design-kits-sky130-xschem-magic-ngspice-6fd80c99652021dace57f3e0bbca7303-410047.html | TEXT: SEMICONDUCTOR CHIPS DESIGNING PROCESS USING OPEN-S
+HREF: https://sti.vista.gov.vn/publication/download/410047-6fd80c99652021dace57f3e0bbca7303.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/building-a-plant-for-simulating-steps-of-operation-in-a-cement-production-line-sequentially-5401f790ffa77a2ef357e9891f78aec6-410048.html | TEXT: BUILDING A PLANT FOR SIMULATING STEPS OF OPERATION
+HREF: https://sti.vista.gov.vn/publication/download/410048-5401f790ffa77a2ef357e9891f78aec6.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/a-qualitative-and-quantitative-investigation-of-some-antioxidant-compounds-in-pennywort-centella-asiatica-de7ac4310405592673627827e46df0f6-410049.html | TEXT: A QUALITATIVE AND QUANTITATIVE INVESTIGATION OF SO
+HREF: https://sti.vista.gov.vn/publication/download/410049-de7ac4310405592673627827e46df0f6.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/effect-of-fermentation-conditions-on-alcohol-content-and-sensory-values-of-fermented-watermelon-rind-beverage-9d842c354396dbd933e41ac62b97c2bd-410050.html | TEXT: EFFECT OF FERMENTATION CONDITIONS ON ALCOHOL CONTE
+HREF: https://sti.vista.gov.vn/publication/download/410050-9d842c354396dbd933e41ac62b97c2bd.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/extraction-and-investigation-of-the-chemical-composition-of-essential-oil-f-rom-ocimum-africanum-l-65579c99b699c3bc88f179c7c6f20257-410051.html | TEXT: EXTRACTION AND INVESTIGATION OF THE CHEMICAL COMPO
+HREF: https://sti.vista.gov.vn/publication/download/410051-65579c99b699c3bc88f179c7c6f20257.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/inorganic-p-solubilization-by-microorganisms-and-their-potential-applications-in-agriculture-3877c3282f69eb34d733152b043e86db-410052.html | TEXT: INORGANIC P SOLUBILIZATION BY MICROORGANISMS AND T
+HREF: https://sti.vista.gov.vn/publication/download/410052-3877c3282f69eb34d733152b043e86db.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/eco-tourism-development-in-can-tho-city-current-situation-and-solutions-c18228dbd46c7b002e10324859bfa916-410053.html | TEXT: ECO-TOURISM DEVELOPMENT IN CAN THO CITY: CURRENT S
+HREF: https://sti.vista.gov.vn/publication/download/410053-c18228dbd46c7b002e10324859bfa916.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/publication/view/young-peoples-awareness-of-circular-economy-the-case-with-economic-students-at-can-tho-university-of-technology-d7ff645bed74f6e6357250adb44d8009-410054.html | TEXT: YOUNG PEOPLE’S AWARENESS OF CIRCULAR ECONOMY: THE 
+HREF: https://sti.vista.gov.vn/publication/download/410054-d7ff645bed74f6e6357250adb44d8009.html | TEXT: Xem toàn văn
+HREF: https://sti.vista.gov.vn/?mod=publication&keyword=&year=0&ts=all&af=&nb=4&cat=&sort=&page=0 | TEXT: Trước
+HREF: https://sti.vista.gov.vn/?mod=publication&keyword=&year=0&ts=all&af=&nb=4&cat=&sort=&page=0 | TEXT: 1
+HREF: https://sti.vista.gov.vn/?mod=publication&keyword=&year=0&ts=all&af=&nb=4&cat=&sort=&page=20 | TEXT: 2
+HREF: https://sti.vista.gov.vn/?mod=publication&keyword=&year=0&ts=all&af=&nb=4&cat=&sort=&page=40 | TEXT: 3
+HREF: https://sti.vista.gov.vn/?mod=publication&keyword=&year=0&ts=all&af=&nb=4&cat=&sort=&page=436360 | TEXT: 21819
+HREF: https://sti.vista.gov.vn/?mod=publication&keyword=&year=0&ts=all&af=&nb=4&cat=&sort=&page=436380 | TEXT: 21820
+HREF: https://sti.vista.gov.vn/?mod=publication&keyword=&year=0&ts=all&af=&nb=4&cat=&sort=&page=436400 | TEXT: 21821
+HREF: https://sti.vista.gov.vn/?mod=publication&keyword=&year=0&ts=all&af=&nb=4&cat=&sort=&page=40 | TEXT: Sau

@@ -1,0 +1,18 @@
+{
+    "URL": "https://sti.vista.gov.vn/publication/view/ung-dung-mediapipe-va-svm-trong-nhan-dang-ngon-ngu-ky-hieu-ho-tro-nguoi-khiem-thinh-fc5a1ee595fa232e91daf01acb8c725d-467838.html",
+    "Lĩnh vực nghiên cứu": "202 - Kỹ thuật điện, kỹ thuật điện tử, kỹ thuật thông tin",
+    "Tác giả": "Phạm Kim Don, Dương Thanh Linh",
+    "Nhan đề": "Ứng dụng Mediapipe và SVM trong nhận dạng ngôn ngữ ký hiệu hỗ trợ người khiếm thính",
+    "Nhan đề tiếng anh": "Application of MediaPipe and SVM in sign language recognition to support the hearing impaired",
+    "Nguồn trích": "Tạp chí Khoa học Lạc Hồng",
+    "Năm xuất bản": "2025",
+    "Số": "22",
+    "Trang": "19-24",
+    "ISSN": "2525-2186",
+    "Từ khóa": "Ngôn ngữ ký hiệu, Công nghệ MediaPipe, Thuật toán SVM",
+    "Từ khóa tiếng anh": "Sign language, Hearing-impaired community, MediaPipe technology, Support Vector Machine, Sign language recognition",
+    "Tóm tắt": "Ngôn ngữ ký hiệu đóng vai trò là phương tiện giao tiếp thiết yếu đối với cộng đồng người khiếm thính, tuy nhiên, việc tiếp cận và ứng dụng ngôn ngữ này vẫn gặp nhiều hạn chế tại Việt Nam do thiếu hụt nguồn lực và công cụ hỗ trợ. Nhằm góp phần khắc phục vấn đề này, nghiên cứu đề xuất một hệ thống nhận diện ngôn ngữ ký hiệu tiếng Việt dựa trên sự kết hợp giữa công nghệ MediaPipe và thuật toán phân loại SVM (Support Vector Machine). Dữ liệu huấn luyện được xây dựng từ hình ảnh các cử chỉ tay, trong đó MediaPipe đảm nhiệm việc phát hiện và trích xuất các điểm đặc trưng (landmarks) trên bàn tay. Sau đó, mô hình SVM được sử dụng để phân loại các ký hiệu. Kết quả thực nghiệm cho thấy hệ thống đạt độ chính xác từ 85% đến 90%, chứng minh tính khả thi trong việc hỗ trợ giao tiếp cho người khiếm thính thông qua công nghệ nhận dạng ngôn ngữ ký hiệu. Ngày nhận: 14/4/2025 Ngày hoàn thiện: 28/5/2025 Ngày chấp nhận: 28/5/2025 Ngày đăng: 15/9/2025",
+    "Tóm tắt tiếng anh": "Sign language serves as an essential means of communication for the hearing-impaired community. However, access to and adoption of sign language in Vietnam remain limited due to a lack of resources and supporting tools. To address this issue, this study proposes a Vietnamese Sign Language recognition system that combines MediaPipe technology with the Support Vector Machine (SVM) classification algorithm. The training dataset is constructed f-rom hand gesture images, with MediaPipe responsible for detecting and extracting hand landmark features. These features are then classified using the SVM model. Experimental results demonstrate that the system achieves an accuracy rate between 85% and 90%, confirming its potential to support communication for hearing-impaired individuals through sign language recognition technology.",
+    "Link file pdf toàn văn": "https://sti.vista.gov.vn/publication/download/467838-fc5a1ee595fa232e91daf01acb8c725d.html",
+    "Tên file PDF cục bộ": "article_467838.pdf"
+}

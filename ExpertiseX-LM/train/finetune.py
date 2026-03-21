@@ -1,0 +1,59 @@
+import os
+import argparse
+from transformers import AutoTokenizer, AutoConfig, Trainer, TrainingArguments
+from dataset import ExpertiseGraphDataset
+from model import ExpertiseXLMForSequenceClassification
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--data_dir", type=str, default=r"d:\C500\Lab306\Reviewer_Recommendation\goldstandard-reviewer-paper-match\data")
+    parser.add_argument("--pretrained_model_dir", type=str, default="./pretrain_output/final")
+    parser.add_argument("--output_dir", type=str, default="./finetune_output")
+    args = parser.parse_args()
+
+    tokenizer = AutoTokenizer.from_pretrained("vinai/phobert-base-v2", local_files_only=True)
+    special_tokens_dict = {'additional_special_tokens': ['[TARGET_PAPER]', '[REVIEWER_PAPER]', '[RESEARCH_AREA]']}
+    tokenizer.add_special_tokens(special_tokens_dict)
+
+    eval_csv_path = os.path.join(args.data_dir, "evaluations.csv")
+    dataset = ExpertiseGraphDataset(
+        data_dir=args.data_dir,
+        eval_csv=eval_csv_path,
+        tokenizer=tokenizer,
+        is_pretrain=False
+    )
+    
+    config = AutoConfig.from_pretrained("vinai/phobert-base-v2", local_files_only=True)
+    config.vocab_size = len(tokenizer)
+    config.num_labels = 1 # Regression (MSE) for 1-5 float ratings
+    
+    # In practice, you'd load the safetensors/pytorch_model.bin from pretraining
+    model = ExpertiseXLMForSequenceClassification(config)
+    if os.path.exists(args.pretrained_model_dir):
+        # We only load state if it's explicitly available, or Trainer can handle `from_pretrained`
+        model = ExpertiseXLMForSequenceClassification.from_pretrained(args.pretrained_model_dir, config=config)
+
+    training_args = TrainingArguments(
+        output_dir=args.output_dir,
+        overwrite_output_dir=True,
+        num_train_epochs=1,
+        max_steps=20, # Chỉ chạy 20 bước (mẫu)
+        per_device_train_batch_size=8,
+        save_steps=20,
+        save_total_limit=1,
+        logging_steps=5,
+        learning_rate=2e-5,
+        remove_unused_columns=False,
+    )
+
+    trainer = Trainer(
+        model=model,
+        args=training_args,
+        train_dataset=dataset,
+    )
+
+    trainer.train()
+    trainer.save_model(os.path.join(args.output_dir, "final"))
+
+if __name__ == "__main__":
+    main()
