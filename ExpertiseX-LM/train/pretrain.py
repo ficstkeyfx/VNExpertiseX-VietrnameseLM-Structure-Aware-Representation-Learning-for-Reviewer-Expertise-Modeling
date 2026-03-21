@@ -44,7 +44,6 @@ def main():
         logging_steps=50,
         learning_rate=5e-5,
         remove_unused_columns=False,
-        save_safetensors=False,
     )
 
     trainer = Trainer(
