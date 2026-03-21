@@ -13,7 +13,7 @@ def main():
     parser.add_argument("--max_steps", type=int, default=-1)
     args = parser.parse_args()
 
-    tokenizer = AutoTokenizer.from_pretrained("vinai/phobert-base-v2", local_files_only=True)
+    tokenizer = AutoTokenizer.from_pretrained("vinai/phobert-base-v2")
     special_tokens_dict = {'additional_special_tokens': ['[TARGET_PAPER]', '[REVIEWER_PAPER]', '[RESEARCH_AREA]']}
     tokenizer.add_special_tokens(special_tokens_dict)
 
@@ -25,7 +25,7 @@ def main():
         is_pretrain=False
     )
     
-    config = AutoConfig.from_pretrained("vinai/phobert-base-v2", local_files_only=True)
+    config = AutoConfig.from_pretrained("vinai/phobert-base-v2")
     config.vocab_size = len(tokenizer)
     config.num_labels = 1 # Regression (MSE) for 1-5 float ratings
     

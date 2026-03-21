@@ -24,7 +24,7 @@ def main():
     parser.add_argument("--num_test_papers", type=int, default=2)
     args = parser.parse_args()
 
-    tokenizer = AutoTokenizer.from_pretrained("vinai/phobert-base-v2", local_files_only=True)
+    tokenizer = AutoTokenizer.from_pretrained("vinai/phobert-base-v2")
     special_tokens_dict = {'additional_special_tokens': ['[TARGET_PAPER]', '[REVIEWER_PAPER]', '[RESEARCH_AREA]']}
     tokenizer.add_special_tokens(special_tokens_dict)
 
@@ -37,7 +37,7 @@ def main():
     )
     dataset.pairs = [] # Xoá cache pair
     
-    config = AutoConfig.from_pretrained("vinai/phobert-base-v2", local_files_only=True)
+    config = AutoConfig.from_pretrained("vinai/phobert-base-v2")
     config.vocab_size = len(tokenizer)
     config.num_labels = 1
     
