@@ -65,7 +65,7 @@ $$
 
 where $\mathbf{W}(x_i)$ is the word embedding for token $x_i$, and $\mathbf{E}_k(p_i^k)$ is the learned embedding for dimension $k$ at value $p_i^k$. This additive composition allows the model to disentangle the contributions of textual semantics and structural context, enabling it to treat identical words differently depending on whether they appear in the target paper’s abstract versus a reviewer’s past publication.
 
-### 2.4. Pre-training: Masked Subgraph Language Modeling (MSLM)
+### 2.4. Continuos Pre-training: Continuos Masked Subgraph Language Modeling (MSLM)
 
 To learn effective representations of the expertise subgraph before any task-specific supervision, we introduce **Masked Subgraph Language Modeling (MSLM)**, a pre-training objective that extends standard Masked Language Modeling (MLM) with node-aware masking.
 

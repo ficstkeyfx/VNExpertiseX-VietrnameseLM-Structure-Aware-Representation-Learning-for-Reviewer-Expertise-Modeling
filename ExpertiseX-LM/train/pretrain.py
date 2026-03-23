@@ -30,19 +30,24 @@ def main():
     collator = MSLM_DataCollator(tokenizer=tokenizer, mask_prob=0.15)
 
     config = AutoConfig.from_pretrained("vinai/phobert-base-v2")
-    # match vocab size to tokenizer after adding special tokens
     config.vocab_size = len(tokenizer)
 
-    model = ExpertiseXLMForPreTraining(config)
+    # Load PhoBERT pretrained weights properly
+    model = ExpertiseXLMForPreTraining.from_pretrained_phobert("vinai/phobert-base-v2", config)
 
     training_args = TrainingArguments(
         output_dir=args.output_dir,
         num_train_epochs=args.num_train_epochs,
         max_steps=args.max_steps,
         per_device_train_batch_size=4,
-        save_strategy="no",
+        gradient_accumulation_steps=8,
+        save_strategy="epoch",
         logging_steps=50,
         learning_rate=5e-5,
+        warmup_ratio=0.1,
+        weight_decay=0.01,
+        fp16=torch.cuda.is_available(),
+        seed=42,
         remove_unused_columns=False,
     )
 

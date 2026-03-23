@@ -34,6 +34,7 @@ class ExpertiseGraphDataset(Dataset):
         self.author_to_papers = {} # author_name -> [paper_ids]
         self.all_paper_ids = []
         self.paper_cache = {} # paper_id -> dict (RAM cache)
+        self._token_cache = {} # text -> token_ids (avoid re-tokenizing across epochs)
         
         self._load_articles()
             
@@ -95,7 +96,7 @@ class ExpertiseGraphDataset(Dataset):
                                 self.author_to_papers[author] = []
                             self.author_to_papers[author].append(paper_id)
             except Exception as e:
-                pass
+                logger.warning(f"Failed to load {p_file}: {e}")
                 
     def _build_pretrain_pairs(self):
         self._build_pairs_from_participants()
@@ -112,13 +113,19 @@ class ExpertiseGraphDataset(Dataset):
         if not self.all_paper_ids: return
         
         negative_pairs = []
+        author_papers_set = {author: set(papers) for author, papers in self.author_to_papers.items()}
         for i in range(num_positives):
             rev_id = self.pairs[i][0]
             true_paper = self.pairs[i][1]
+            rev_papers = author_papers_set.get(rev_id, set())
             rand_paper = random.choice(self.all_paper_ids)
-            while rand_paper == true_paper or (rev_id in self.author_to_papers and rand_paper in self.author_to_papers[rev_id]):
+            max_retries = 100
+            retries = 0
+            while (rand_paper == true_paper or rand_paper in rev_papers) and retries < max_retries:
                 rand_paper = random.choice(self.all_paper_ids)
-            negative_pairs.append((rev_id, rand_paper, 0.0))
+                retries += 1
+            if rand_paper != true_paper:
+                negative_pairs.append((rev_id, rand_paper, 0.0))
         
         self.pairs.extend(negative_pairs)
         random.shuffle(self.pairs)
@@ -170,7 +177,11 @@ class ExpertiseGraphDataset(Dataset):
         
         # Helper to add a tokenized string block with position tracking
         def add_node(text_block, e0, e1, e2, e3, e4, node_idx):
-            tokens = self.tokenizer.encode(text_block, add_special_tokens=False)
+            if text_block in self._token_cache:
+                tokens = self._token_cache[text_block]
+            else:
+                tokens = self.tokenizer.encode(text_block, add_special_tokens=False)
+                self._token_cache[text_block] = tokens
             for e5, token in enumerate(tokens):
                 if len(input_ids) >= self.max_seq_length - 2: # reserve for CLS, SEP
                     break
@@ -242,36 +253,38 @@ class MSLM_DataCollator:
         input_ids = batch["input_ids"].clone()
         labels = input_ids.clone()
         
+        selected_mask = torch.zeros_like(input_ids, dtype=torch.bool)
+
         for i in range(len(features)):
             node_masks = batch["node_masks"][i]
             valid_nodes = torch.unique(node_masks[node_masks != -1]).tolist()
             if not valid_nodes:
                 continue
-                
-            num_tokens = (batch["attention_mask"][i] == 1).sum().item() - 2 # ignore cls, sep
+
+            num_tokens = (batch["attention_mask"][i] == 1).sum().item() - 2
             mask_budget = int(num_tokens * self.mask_prob)
-            
+
             random.shuffle(valid_nodes)
             masked_count = 0
-            
+
             for node_idx in valid_nodes:
                 if masked_count >= mask_budget:
                     break
-                    
+
                 node_positions = (node_masks == node_idx).nonzero(as_tuple=True)[0]
-                
+
                 for pos in node_positions:
+                    selected_mask[i, pos] = True
                     prob = random.random()
                     if prob < 0.8:
                         input_ids[i, pos] = self.tokenizer.mask_token_id
                     elif prob < 0.9:
                         input_ids[i, pos] = random.randint(0, self.tokenizer.vocab_size - 1)
-                    # 10% keep original
-                    
+
                 masked_count += len(node_positions)
-                
-            # Ignore loss for non-masked tokens by setting label to -100
-            labels[i][input_ids[i] == batch["input_ids"][i]] = -100
+
+            # -100 for positions NOT selected for masking (including 10% keep-original)
+            labels[i][~selected_mask[i]] = -100
             
         batch["input_ids"] = input_ids
         batch["mlm_labels"] = labels
