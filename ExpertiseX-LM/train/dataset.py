@@ -33,6 +33,7 @@ class ExpertiseGraphDataset(Dataset):
         self.research_areas = {} # paper_id -> [areas]
         self.author_to_papers = {} # author_name -> [paper_ids]
         self.all_paper_ids = []
+        self.paper_cache = {} # paper_id -> dict (RAM cache)
         
         self._load_articles()
             
@@ -78,6 +79,9 @@ class ExpertiseGraphDataset(Dataset):
                 with open(p_file, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                     
+                    # Cache toàn bộ nội dung JSON vào RAM
+                    self.paper_cache[paper_id] = data
+                    
                     # 1. Map Research Area
                     rf = data.get("research_field", "")
                     if rf: self.research_areas[paper_id] = [rf]
@@ -120,14 +124,8 @@ class ExpertiseGraphDataset(Dataset):
         random.shuffle(self.pairs)
         
     def _read_paper(self, paper_id):
-        path = os.path.join(self.articles_dir, f"{paper_id}.json")
-        if not os.path.exists(path):
-            return None
-        try:
-            with open(path, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        except Exception:
-            return None
+        # Đọc từ RAM cache thay vì mở đĩa
+        return self.paper_cache.get(paper_id, None)
 
     def _read_participant(self, reviewer_id):
         # Mock participant document from the index
@@ -191,7 +189,8 @@ class ExpertiseGraphDataset(Dataset):
         node_counter = 0
         
         # TARGET PAPER
-        target_text = f"[TARGET_PAPER] {target_paper.get('title', '')} {target_paper.get('abstract', '')}"
+        target_kw = target_paper.get('keywords', '')
+        target_text = f"[TARGET_PAPER] {target_paper.get('title', '')} {target_kw} {target_paper.get('abstract', '')}"
         add_node(target_text, e0=0, e1=0, e2=0, e3=0, e4=0, node_idx=node_counter)
         node_counter += 1
         
@@ -203,7 +202,8 @@ class ExpertiseGraphDataset(Dataset):
             
         # REVIEWER PAPERS
         for rp in reviewer_papers:
-            rp_text = f"[REVIEWER_PAPER] {rp.get('title', '')} {rp.get('abstract', '')}"
+            rp_kw = rp.get('keywords', '')
+            rp_text = f"[REVIEWER_PAPER] {rp.get('title', '')} {rp_kw} {rp.get('abstract', '')}"
             add_node(rp_text, e0=1, e1=1, e2=1, e3=0, e4=0, node_idx=node_counter)
             node_counter += 1
 

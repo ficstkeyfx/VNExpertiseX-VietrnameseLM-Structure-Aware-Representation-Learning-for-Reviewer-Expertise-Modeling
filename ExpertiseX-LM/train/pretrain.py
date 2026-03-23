@@ -1,5 +1,6 @@
 import os
 import argparse
+import torch
 from transformers import AutoTokenizer, AutoConfig, Trainer, TrainingArguments
 from dataset import ExpertiseGraphDataset, MSLM_DataCollator
 from model import ExpertiseXLMForPreTraining
@@ -39,8 +40,7 @@ def main():
         num_train_epochs=args.num_train_epochs,
         max_steps=args.max_steps,
         per_device_train_batch_size=4,
-        save_steps=500,
-        save_total_limit=2,
+        save_strategy="no",
         logging_steps=50,
         learning_rate=5e-5,
         remove_unused_columns=False,
@@ -54,7 +54,13 @@ def main():
     )
 
     trainer.train()
-    trainer.save_model(os.path.join(args.output_dir, "final"))
+    
+    # Manual save to bypass safetensors shared-weights issue
+    save_dir = os.path.join(args.output_dir, "final")
+    os.makedirs(save_dir, exist_ok=True)
+    torch.save(model.state_dict(), os.path.join(save_dir, "pytorch_model.bin"))
+    config.save_pretrained(save_dir)
+    tokenizer.save_pretrained(save_dir)
 
 if __name__ == "__main__":
     main()

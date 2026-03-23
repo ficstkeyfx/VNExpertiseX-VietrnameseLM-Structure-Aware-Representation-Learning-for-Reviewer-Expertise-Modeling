@@ -47,6 +47,8 @@ class ExpertiseEmbeddings(nn.Module):
         return embeddings
 
 class ExpertiseXLMForPreTraining(RobertaPreTrainedModel):
+    _tied_weights_keys = []  # Prevent safetensors shared-weights error
+    
     def __init__(self, config):
         super().__init__(config)
         self.roberta = RobertaModel(config, add_pooling_layer=False)
@@ -95,9 +97,11 @@ class ExpertiseXLMForPreTraining(RobertaPreTrainedModel):
         )
 
 class ExpertiseXLMForSequenceClassification(RobertaPreTrainedModel):
+    _tied_weights_keys = []  # Prevent safetensors shared-weights error
+    
     def __init__(self, config):
         super().__init__(config)
-        self.num_labels = config.num_labels # Using 1 for MSE since scores are float 1-5
+        self.num_labels = config.num_labels
         
         self.roberta = RobertaModel(config, add_pooling_layer=True)
         # Override embeddings
