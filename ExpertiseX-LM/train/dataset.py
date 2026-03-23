@@ -21,12 +21,16 @@ class ExpertiseGraphDataset(Dataset):
         eval_csv: str,
         tokenizer: PreTrainedTokenizer,
         max_seq_length: int = 256,
-        is_pretrain: bool = True
+        is_pretrain: bool = True,
+        use_areas: bool = True,
+        use_negatives: bool = True,
     ):
         self.data_dir = data_dir
         self.tokenizer = tokenizer
         self.max_seq_length = max_seq_length
         self.is_pretrain = is_pretrain
+        self.use_areas = use_areas
+        self.use_negatives = use_negatives
         
         self.articles_dir = data_dir
         
@@ -55,14 +59,14 @@ class ExpertiseGraphDataset(Dataset):
                         self.pairs.append((reviewer_id, paper_id, score))
             
             # Autogenerate negative samples (0.0) if only positive labels exist
-            if not self.is_pretrain:
+            if not self.is_pretrain and self.use_negatives:
                 all_scores = set(score for _, _, score in self.pairs)
                 if len(all_scores) == 1 and 1.0 in all_scores:
                     self._generate_negative_samples()
         else:
             # Proxy author-paper pairs
             self._build_pairs_from_participants()
-            if not self.is_pretrain:
+            if not self.is_pretrain and self.use_negatives:
                 self._generate_negative_samples()
             
     def _load_articles(self):
@@ -160,8 +164,8 @@ class ExpertiseGraphDataset(Dataset):
                 if p_data:
                     reviewer_papers.append(p_data)
                     
-        # 3. Research Areas for the target
-        target_areas = self.research_areas.get(target_paper_id, [])
+        # 3. Research Areas for the target (disabled when use_areas=False for ablation)
+        target_areas = self.research_areas.get(target_paper_id, []) if self.use_areas else []
 
         return self._serialize_subgraph(target_paper, reviewer_papers, target_areas, label)
         
